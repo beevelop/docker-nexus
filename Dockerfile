@@ -1,6 +1,6 @@
 FROM anapsix/alpine-java:8
 
-ENV NEXUS_VERSION=3.0.1-01 \
+ENV NEXUS_VERSION=3.2.0-01 \
     PATH=$PATH:/opt/nexus/bin
 
 RUN apk add --no-cache curl tar && \
