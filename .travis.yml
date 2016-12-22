@@ -6,5 +6,5 @@ services:
 script:
   - docker build -t nexus .
   - docker run --name nexus -d nexus
-  - sleep 42
+  - travis_wait 10 sleep 600
   - docker exec nexus /bin/sh -c "apk add --no-cache curl && curl -f localhost:8081"
